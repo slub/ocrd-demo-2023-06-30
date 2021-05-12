@@ -1,0 +1,293 @@
+{
+  "OCR-D-GT-SEG-LINE,TESS-GT4HIST": {
+    "lines": [
+      {
+        "tl_1": {
+          "length": 10,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_2": {
+          "length": 3,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_3": {
+          "length": 5,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_4": {
+          "length": 7,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_5": {
+          "length": 18,
+          "distance": 0.2222222222222222
+        }
+      },
+      {
+        "tl_6": {
+          "length": 9,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_7": {
+          "length": 28,
+          "distance": 0.06896551724137931
+        }
+      },
+      {
+        "tl_8": {
+          "length": 43,
+          "distance": 0.1956521739130435
+        }
+      },
+      {
+        "tl_9": {
+          "length": 7,
+          "distance": 0.14285714285714285
+        }
+      },
+      {
+        "tl_10": {
+          "length": 21,
+          "distance": 0.047619047619047616
+        }
+      },
+      {
+        "tl_11": {
+          "length": 3,
+          "distance": 0.25
+        }
+      },
+      {
+        "tl_12": {
+          "length": 21,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_13": {
+          "length": 28,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_14": {
+          "length": 22,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_15": {
+          "length": 30,
+          "distance": 0.03333333333333333
+        }
+      }
+    ],
+    "length": 15,
+    "distance-mean": 0.06404329581241125,
+    "distance-varia": 0.007812161584631712
+  },
+  "OCR-D-GT-SEG-LINE,TESS-DEU": {
+    "lines": [
+      {
+        "tl_1": {
+          "length": 10,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_2": {
+          "length": 3,
+          "distance": 0.5
+        }
+      },
+      {
+        "tl_3": {
+          "length": 5,
+          "distance": 1.0
+        }
+      },
+      {
+        "tl_4": {
+          "length": 7,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_5": {
+          "length": 18,
+          "distance": 0.7222222222222222
+        }
+      },
+      {
+        "tl_6": {
+          "length": 9,
+          "distance": 0.1111111111111111
+        }
+      },
+      {
+        "tl_7": {
+          "length": 28,
+          "distance": 0.27586206896551724
+        }
+      },
+      {
+        "tl_8": {
+          "length": 43,
+          "distance": 0.25
+        }
+      },
+      {
+        "tl_9": {
+          "length": 7,
+          "distance": 0.25
+        }
+      },
+      {
+        "tl_10": {
+          "length": 21,
+          "distance": 0.19047619047619047
+        }
+      },
+      {
+        "tl_11": {
+          "length": 3,
+          "distance": 0.6666666666666666
+        }
+      },
+      {
+        "tl_12": {
+          "length": 21,
+          "distance": 0.17391304347826086
+        }
+      },
+      {
+        "tl_13": {
+          "length": 28,
+          "distance": 0.13793103448275862
+        }
+      },
+      {
+        "tl_14": {
+          "length": 22,
+          "distance": 0.13043478260869565
+        }
+      },
+      {
+        "tl_15": {
+          "length": 30,
+          "distance": 0.03333333333333333
+        }
+      }
+    ],
+    "length": 15,
+    "distance-mean": 0.2961300302229838,
+    "distance-varia": 0.0811850840368879
+  },
+  "OCR-D-GT-SEG-LINE,CALA-GT4HIST": {
+    "lines": [
+      {
+        "tl_1": {
+          "length": 10,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_2": {
+          "length": 3,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_3": {
+          "length": 5,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_4": {
+          "length": 7,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_5": {
+          "length": 18,
+          "distance": 0.2222222222222222
+        }
+      },
+      {
+        "tl_6": {
+          "length": 9,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_7": {
+          "length": 28,
+          "distance": 0.07142857142857142
+        }
+      },
+      {
+        "tl_8": {
+          "length": 43,
+          "distance": 0.09302325581395349
+        }
+      },
+      {
+        "tl_9": {
+          "length": 7,
+          "distance": 0.14285714285714285
+        }
+      },
+      {
+        "tl_10": {
+          "length": 21,
+          "distance": 0.047619047619047616
+        }
+      },
+      {
+        "tl_11": {
+          "length": 3,
+          "distance": 0.3333333333333333
+        }
+      },
+      {
+        "tl_12": {
+          "length": 21,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_13": {
+          "length": 28,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_14": {
+          "length": 22,
+          "distance": 0.0
+        }
+      },
+      {
+        "tl_15": {
+          "length": 30,
+          "distance": 0.03225806451612903
+        }
+      }
+    ],
+    "length": 15,
+    "distance-mean": 0.06284944251935999,
+    "distance-varia": 0.009247648494127432
+  }
+}

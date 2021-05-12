@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="CALA-GT4HIST_0003">
+    <pc:Metadata>
+        <pc:Creator>OCR-D</pc:Creator>
+        <pc:Created>2016-09-20T11:10:52.413000+02:00</pc:Created>
+        <pc:LastChange>2021-05-12T06:53:43</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola-ms-split" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="0" type="win-size"/>
+                <pc:Label value="0" type="dpi"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="qurator-gt4histocr-1.0" type="checkpoint_dir"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+                <pc:Label value="/home/xbert/.local/share/ocrd-resources/ocrd-calamari-recognize/qurator-gt4histocr-1.0/*.ckpt.json" type="checkpoint"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/OCR-D-IMG_0003.tif" imageWidth="1728" imageHeight="2647" type="content">
+        <pc:AlternativeImage filename="BIN/OCR-D-IMG_0003-BIN_sauvola-ms-split.png" comments="cropped,binarized"/>
+        <pc:Border>
+            <pc:Coords points="552,312 1677,312 1677,2266 552,2266"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="ro_1483522626141" caption="Regions reading order">
+                <pc:RegionRefIndexed index="0" regionRef="r_2_1"/>
+                <pc:RegionRefIndexed index="1" regionRef="r_2_2"/>
+                <pc:RegionRefIndexed index="2" regionRef="r_2_3"/>
+                <pc:RegionRefIndexed index="3" regionRef="r_2_4"/>
+                <pc:RegionRefIndexed index="4" regionRef="r_2_5"/>
+                <pc:RegionRefIndexed index="5" regionRef="r_2_6"/>
+                <pc:RegionRefIndexed index="6" regionRef="r_2_7"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="r_2_1" type="page-number">
+            <pc:Coords points="610,325 639,325 639,362 610,362"/>
+            <pc:TextLine id="tl_1" primaryLanguage="German">
+                <pc:Coords points="611,326 638,326 638,361 611,361"/>
+                <pc:Baseline points="611,372 638,372"/>
+                <pc:TextEquiv conf="0.908588707447052">
+                    <pc:Unicode>4</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>4</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_2" type="paragraph">
+            <pc:Coords points="610,392 1649,392 1649,835 610,835"/>
+            <pc:TextLine id="tl_2" primaryLanguage="German">
+                <pc:Coords points="612,393 1648,393 1648,458 612,458"/>
+                <pc:Baseline points="612,445 1648,445"/>
+                <pc:TextEquiv conf="0.986820638179779">
+                    <pc:Unicode>gegen einen andern Koͤrper hinhielt, er leichte Koͤrper</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_3" primaryLanguage="German">
+                <pc:Coords points="614,450 1647,450 1647,514 614,514"/>
+                <pc:Baseline points="614,501 1647,501"/>
+                <pc:TextEquiv conf="0.979556202888489">
+                    <pc:Unicode>an ſich zog/ kniſterte und in der Dunkelheit, kleine</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_4" primaryLanguage="German">
+                <pc:Coords points="613,504 1647,504 1647,568 613,568"/>
+                <pc:Baseline points="613,556 1647,556"/>
+                <pc:TextEquiv conf="0.98699951171875">
+                    <pc:Unicode>Funkchen ſehen ließ. Weil der Bernſtein, electrum</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_5" primaryLanguage="German">
+                <pc:Coords points="613,561 1644,561 1644,628 613,628"/>
+                <pc:Baseline points="613,613 1644,613"/>
+                <pc:TextEquiv conf="0.972440361976624">
+                    <pc:Unicode>heiſt, ſo nannte man dieſes Feuer, eleetriſches Feuer.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_6" primaryLanguage="German">
+                <pc:Coords points="613,618 1646,618 1646,680 613,680"/>
+                <pc:Baseline points="613,668 1646,668"/>
+                <pc:TextEquiv conf="0.990785002708435">
+                    <pc:Unicode>Man bemerkte hernach auch, daß Glas, Pech, Schwe⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_7" primaryLanguage="German">
+                <pc:Coords points="613,674 1645,674 1645,735 613,735"/>
+                <pc:Baseline points="613,723 1645,723"/>
+                <pc:TextEquiv conf="0.988762378692627">
+                    <pc:Unicode>fel, Siegellac) u. d. g. das nehmliche Feuer von</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_8" primaryLanguage="German">
+                <pc:Coords points="613,729 1646,729 1646,789 613,789"/>
+                <pc:Baseline points="613,778 1646,778"/>
+                <pc:TextEquiv conf="0.993114411830902">
+                    <pc:Unicode>ſich geben, wenn man ſie entweder mjt der Hand, oder</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_9" primaryLanguage="German">
+                <pc:Coords points="611,778 1224,778 1224,834 611,834"/>
+                <pc:Baseline points="611,832 1224,832"/>
+                <pc:TextEquiv conf="0.995328485965729">
+                    <pc:Unicode>mit einem ledernen Kuͤſſen reibt.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>gegen einen andern Koͤrper hinhielt, er leichte Koͤrper
+an ſich zog/ kniſterte und in der Dunkelheit, kleine
+Funkchen ſehen ließ. Weil der Bernſtein, electrum
+heiſt, ſo nannte man dieſes Feuer, eleetriſches Feuer.
+Man bemerkte hernach auch, daß Glas, Pech, Schwe⸗
+fel, Siegellac) u. d. g. das nehmliche Feuer von
+ſich geben, wenn man ſie entweder mjt der Hand, oder
+mit einem ledernen Kuͤſſen reibt.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_3" type="paragraph">
+            <pc:Coords points="606,838 1651,838 1651,1677 606,1677"/>
+            <pc:TextLine id="tl_10" primaryLanguage="German">
+                <pc:Coords points="694,839 1646,839 1646,903 694,903"/>
+                <pc:Baseline points="694,888 1646,888"/>
+                <pc:TextEquiv conf="0.948179185390472">
+                    <pc:Unicode>Daher machte man Maſchienen in welche ma il</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_11" primaryLanguage="German">
+                <pc:Coords points="612,895 1650,895 1650,958 612,958"/>
+                <pc:Baseline points="612,944 1650,944"/>
+                <pc:TextEquiv conf="0.979286909103394">
+                    <pc:Unicode>geln von Glas, oder Schwefel ) einſezte, und durch</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_12" primaryLanguage="German">
+                <pc:Coords points="611,947 1646,947 1646,1014 611,1014"/>
+                <pc:Baseline points="611,1000 1646,1000"/>
+                <pc:TextEquiv conf="0.995998919010162">
+                    <pc:Unicode>ein Rad herum trieb; an die Kugel aber ein Kuͤſſen</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_13" primaryLanguage="German">
+                <pc:Coords points="612,1007 1644,1007 1644,1064 612,1064"/>
+                <pc:Baseline points="612,1054 1644,1054"/>
+                <pc:TextEquiv conf="0.990655481815338">
+                    <pc:Unicode>anhielt. Um aber das Feuer, welches man durch das</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_14" primaryLanguage="German">
+                <pc:Coords points="610,1060 1643,1060 1643,1122 610,1122"/>
+                <pc:Baseline points="610,1109 1643,1109"/>
+                <pc:TextEquiv conf="0.995293378829956">
+                    <pc:Unicode>Reiben dieſer Glas und Schwefelkugeln erhielt, zu</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_15" primaryLanguage="German">
+                <pc:Coords points="609,1112 1644,1112 1644,1173 609,1173"/>
+                <pc:Baseline points="609,1163 1644,1163"/>
+                <pc:TextEquiv conf="0.998396456241608">
+                    <pc:Unicode>ſammeln, machte man folgende Einrichtung. Man</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_16" primaryLanguage="German">
+                <pc:Coords points="608,1168 1643,1168 1643,1227 608,1227"/>
+                <pc:Baseline points="608,1217 1643,1217"/>
+                <pc:TextEquiv conf="0.983020424842834">
+                    <pc:Unicode>bemerkte daß diefes Fener von einer geriebenen Glas.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_17" primaryLanguage="German">
+                <pc:Coords points="608,1223 1642,1223 1642,1287 608,1287"/>
+                <pc:Baseline points="608,1274 1642,1274"/>
+                <pc:TextEquiv conf="0.999052107334137">
+                    <pc:Unicode>kugel, gerne auf alle Arten von Metallen loß gehet</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_18" primaryLanguage="German">
+                <pc:Coords points="608,1279 1641,1279 1641,1339 608,1339"/>
+                <pc:Baseline points="608,1330 1641,1330"/>
+                <pc:TextEquiv conf="0.996298909187317">
+                    <pc:Unicode>und daran fort lauft. Daß aber das Glas, Pech,</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_19" primaryLanguage="German">
+                <pc:Coords points="607,1336 1642,1336 1642,1396 607,1396"/>
+                <pc:Baseline points="607,1386 1642,1386"/>
+                <pc:TextEquiv conf="0.985203981399536">
+                    <pc:Unicode>Sigellae, alle Arten von Harzen, und die Seide,</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_20" primaryLanguage="German">
+                <pc:Coords points="607,1392 1643,1392 1643,1454 607,1454"/>
+                <pc:Baseline points="607,1440 1643,1440"/>
+                <pc:TextEquiv conf="0.973676383495331">
+                    <pc:Unicode>dieſes Feuer nicht weiter laufen laſſen. ) Daher ſtell⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_21" primaryLanguage="German">
+                <pc:Coords points="608,1442 1643,1442 1643,1504 608,1504"/>
+                <pc:Baseline points="608,1492 1643,1492"/>
+                <pc:TextEquiv conf="0.994729340076447">
+                    <pc:Unicode>te man eine blecherne Roͤhre entweder auf einen Fuß</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_22" primaryLanguage="German">
+                <pc:Coords points="610,1498 1642,1498 1642,1559 610,1559"/>
+                <pc:Baseline points="610,1548 1642,1548"/>
+                <pc:TextEquiv conf="0.974986970424652">
+                    <pc:Unicode>von Glas oder Pech; oder hieng ſſe an ſeidenen Schnu.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_23" primaryLanguage="German">
+                <pc:Coords points="608,1553 1641,1553 1641,1617 608,1617"/>
+                <pc:Baseline points="608,1605 1641,1605"/>
+                <pc:TextEquiv conf="0.994033336639404">
+                    <pc:Unicode>ren auf, und richtete ſie gegen eine Glaskugel, die in</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_24" primaryLanguage="German">
+                <pc:Coords points="607,1610 1643,1610 1643,1676 607,1676"/>
+                <pc:Baseline points="607,1664 1643,1664"/>
+                <pc:TextEquiv conf="0.996672987937927">
+                    <pc:Unicode>der erſt bemelden Maſchiene, die man Electriſirmaſchie⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Daher machte man Maſchienen in welche ma il
+geln von Glas, oder Schwefel ) einſezte, und durch
+ein Rad herum trieb; an die Kugel aber ein Kuͤſſen
+anhielt. Um aber das Feuer, welches man durch das
+Reiben dieſer Glas und Schwefelkugeln erhielt, zu
+ſammeln, machte man folgende Einrichtung. Man
+bemerkte daß diefes Fener von einer geriebenen Glas.
+kugel, gerne auf alle Arten von Metallen loß gehet
+und daran fort lauft. Daß aber das Glas, Pech,
+Sigellae, alle Arten von Harzen, und die Seide,
+dieſes Feuer nicht weiter laufen laſſen. ) Daher ſtell⸗
+te man eine blecherne Roͤhre entweder auf einen Fuß
+von Glas oder Pech; oder hieng ſſe an ſeidenen Schnu.
+ren auf, und richtete ſie gegen eine Glaskugel, die in
+der erſt bemelden Maſchiene, die man Electriſirmaſchie⸗</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_4" type="catch-word">
+            <pc:Coords points="1604,1695 1646,1695 1646,1724 1604,1724"/>
+            <pc:TextLine id="tl_25" primaryLanguage="German">
+                <pc:Coords points="1605,1696 1645,1696 1645,1723 1605,1723"/>
+                <pc:Baseline points="1605,1724 1645,1724"/>
+                <pc:TextEquiv conf="0.997997641563416">
+                    <pc:Unicode>ne</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>ne</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_5" type="footnote">
+            <pc:Coords points="605,1748 1643,1748 1643,1857 605,1857"/>
+            <pc:TextLine id="tl_26" primaryLanguage="German">
+                <pc:Coords points="606,1749 1642,1749 1642,1809 606,1809"/>
+                <pc:Baseline points="606,1799 1642,1799"/>
+                <pc:TextEquiv conf="0.979125678539276">
+                    <pc:Unicode>) Gilbert ein Engellaͤnder im 16. Jahrhundert, zeigte dieſes</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_27" primaryLanguage="German">
+                <pc:Coords points="668,1806 1323,1806 1323,1856 668,1856"/>
+                <pc:Baseline points="668,1850 1323,1850"/>
+                <pc:TextEquiv conf="0.992799699306488">
+                    <pc:Unicode>zu erſt in ſeinem Tractat vom Magnat.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>) Gilbert ein Engellaͤnder im 16. Jahrhundert, zeigte dieſes
+zu erſt in ſeinem Tractat vom Magnat.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_6" type="footnote">
+            <pc:Coords points="604,1854 1644,1854 1644,1999 604,1999"/>
+            <pc:TextLine id="tl_28" primaryLanguage="German">
+                <pc:Coords points="605,1855 1643,1855 1643,1910 605,1910"/>
+                <pc:Baseline points="605,1899 1643,1899"/>
+                <pc:TextEquiv conf="0.979740560054779">
+                    <pc:Unicode>) Otto von Guerike ein Burgermeiſter in Magdeburg im</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_29" primaryLanguage="German">
+                <pc:Coords points="665,1906 1643,1906 1643,1962 665,1962"/>
+                <pc:Baseline points="665,1951 1643,1951"/>
+                <pc:TextEquiv conf="0.985794723033905">
+                    <pc:Unicode>vorigen Jahrhundert, erfand die Kugeln von Schwefel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_30" primaryLanguage="German">
+                <pc:Coords points="666,1953 1077,1953 1077,1998 666,1998"/>
+                <pc:Baseline points="666,1994 1077,1994"/>
+                <pc:TextEquiv conf="0.984701097011566">
+                    <pc:Unicode>zu elettriſchen Gebrauch.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>) Otto von Guerike ein Burgermeiſter in Magdeburg im
+vorigen Jahrhundert, erfand die Kugeln von Schwefel
+zu elettriſchen Gebrauch.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_2_7" type="footnote">
+            <pc:Coords points="603,2002 1643,2002 1643,2259 603,2259"/>
+            <pc:TextLine id="tl_31" primaryLanguage="German">
+                <pc:Coords points="604,2003 1642,2003 1642,2065 604,2065"/>
+                <pc:Baseline points="604,2051 1642,2051"/>
+                <pc:TextEquiv conf="0.961364686489105">
+                    <pc:Unicode>) Man nennet daher die Metalle, das Waſſer den thieri.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_32" primaryLanguage="German">
+                <pc:Coords points="666,2050 1642,2050 1642,2115 666,2115"/>
+                <pc:Baseline points="666,2098 1642,2098"/>
+                <pc:TextEquiv conf="0.718312382698059">
+                    <pc:Unicode>den oroer u. d. g lened oip.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_33" primaryLanguage="German">
+                <pc:Coords points="668,2100 1641,2100 1641,2163 668,2163"/>
+                <pc:Baseline points="668,2149 1641,2149"/>
+                <pc:TextEquiv conf="0.627298951148987">
+                    <pc:Unicode>s se e engs. Htaegen ola ,</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_34" primaryLanguage="German">
+                <pc:Coords points="663,2145 1637,2145 1637,2214 663,2214"/>
+                <pc:Baseline points="663,2198 1637,2198"/>
+                <pc:TextEquiv conf="0.48549485206604">
+                    <pc:Unicode>eu eeei un aisi i i</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_35" primaryLanguage="German">
+                <pc:Coords points="658,2193 1487,2193 1487,2258 658,2258"/>
+                <pc:Baseline points="658,2247 1487,2247"/>
+                <pc:TextEquiv conf="0.850965797901154">
+                    <pc:Unicode>nicht leitende BKoͤrper des elctriſchen Fuerr</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>) Man nennet daher die Metalle, das Waſſer den thieri.
+den oroer u. d. g lened oip.
+s se e engs. Htaegen ola ,
+eu eeei un aisi i i
+nicht leitende BKoͤrper des elctriſchen Fuerr</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="Separator_1474986831480_168">
+            <pc:Coords points="983,299 1290,299 1290,364 983,364"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

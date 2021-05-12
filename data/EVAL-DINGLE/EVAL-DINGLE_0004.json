@@ -1,0 +1,10 @@
+{
+    "gt": "OCR-D-GT-SEG-LINE/OCR-D-GT-SEG-LINE_0004.xml",
+    "ocr": "CALA-GT4HIST/CALA-GT4HIST_0004.xml",
+
+    "cer": 0.006888633754305396,
+    "wer": 0.04669260700389105,
+
+    "n_characters": 1742,
+    "n_words": 257
+}

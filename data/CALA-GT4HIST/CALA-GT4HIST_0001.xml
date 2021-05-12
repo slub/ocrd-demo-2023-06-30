@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="CALA-GT4HIST_0001">
+    <pc:Metadata>
+        <pc:Creator>OCR-D</pc:Creator>
+        <pc:Created>2016-09-20T09:10:51</pc:Created>
+        <pc:LastChange>2021-05-12T06:53:34</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola-ms-split" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="0" type="win-size"/>
+                <pc:Label value="0" type="dpi"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="qurator-gt4histocr-1.0" type="checkpoint_dir"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+                <pc:Label value="/home/xbert/.local/share/ocrd-resources/ocrd-calamari-recognize/qurator-gt4histocr-1.0/*.ckpt.json" type="checkpoint"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/OCR-D-IMG_0001.tif" imageWidth="1728" imageHeight="2646" imageXResolution="300." imageYResolution="300." type="front-cover">
+        <pc:AlternativeImage filename="BIN/OCR-D-IMG_0001-BIN_sauvola-ms-split.png" comments="cropped,binarized"/>
+        <pc:Border>
+            <pc:Coords points="153,297 1258,297 1258,2319 153,2319"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="ro357564684568544579089" caption="Regions reading order">
+                <pc:RegionRefIndexed index="0" regionRef="TextRegion_1476699652485_10"/>
+                <pc:RegionRefIndexed index="1" regionRef="TextRegion_1476699661549_11"/>
+                <pc:RegionRefIndexed index="2" regionRef="r_3_1"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="TextRegion_1476699652485_10" type="paragraph">
+            <pc:Coords points="527,337 860,337 1225,749 1225,938 1166,1322 247,1322 186,938 186,749"/>
+            <pc:TextLine id="tl_1" primaryLanguage="German">
+                <pc:Coords points="528,338 859,338 859,407 528,407"/>
+                <pc:Baseline points="528,400 859,400"/>
+                <pc:TextEquiv conf="0.999591708183289">
+                    <pc:Unicode>Unterricht</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_2" primaryLanguage="German">
+                <pc:Coords points="656,449 754,449 754,481 656,481"/>
+                <pc:Baseline points="656,483 754,483"/>
+                <pc:TextEquiv conf="0.849910199642181">
+                    <pc:Unicode>vom</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_3" primaryLanguage="German">
+                <pc:Coords points="430,523 971,523 971,637 430,637"/>
+                <pc:Baseline points="430,624 971,624"/>
+                <pc:TextEquiv conf="0.953468322753906">
+                    <pc:Unicode>Blitz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_4" primaryLanguage="German">
+                <pc:Coords points="569,668 850,668 850,721 569,721"/>
+                <pc:Baseline points="569,721 850,721"/>
+                <pc:TextEquiv conf="0.98110157251358">
+                    <pc:Unicode>und den</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_5" primaryLanguage="German">
+                <pc:Coords points="187,750 1224,750 1224,937 187,937"/>
+                <pc:Baseline points="187,906 1224,906"/>
+                <pc:TextEquiv conf="0.927158832550049">
+                    <pc:Unicode>Blitz-  Wetter</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_6" primaryLanguage="German">
+                <pc:Coords points="340,962 1060,962 1060,1085 340,1085"/>
+                <pc:Baseline points="340,1080 1060,1080"/>
+                <pc:TextEquiv conf="0.960808873176575">
+                    <pc:Unicode>Ableitern</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_7" primaryLanguage="German">
+                <pc:Coords points="304,1127 1110,1127 1110,1189 304,1189"/>
+                <pc:Baseline points="304,1178 1110,1178"/>
+                <pc:TextEquiv conf="0.974398672580719">
+                    <pc:Unicode>zur Belehrng und Berhigung</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_8" primaryLanguage="German">
+                <pc:Coords points="248,1220 1165,1220 1165,1276 248,1276"/>
+                <pc:Baseline points="248,1263 1165,1263"/>
+                <pc:TextEquiv conf="0.941958427429199">
+                    <pc:Unicode>ſonderlich der gelehtten und ds gemeinen</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_9" primaryLanguage="German">
+                <pc:Coords points="625,1283 788,1283 788,1321 625,1321"/>
+                <pc:Baseline points="625,1320 788,1320"/>
+                <pc:TextEquiv conf="0.927559673786163">
+                    <pc:Unicode>Maͤnnes.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Unterricht
+vom
+Blitz
+und den
+Blitz-  Wetter
+Ableitern
+zur Belehrng und Berhigung
+ſonderlich der gelehtten und ds gemeinen
+Maͤnnes.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="TextRegion_1476699661549_11" type="paragraph">
+            <pc:Coords points="468,1405 952,1405 1178,1577 1178,1653 984,1704 432,1704 235,1653 235,1577"/>
+            <pc:TextLine id="tl_10" primaryLanguage="German">
+                <pc:Coords points="469,1406 951,1406 951,1462 469,1462"/>
+                <pc:Baseline points="469,1456 951,1456"/>
+                <pc:TextEquiv conf="0.922419726848602">
+                    <pc:Unicode>Mit ener Kupfertafel</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_11" primaryLanguage="German">
+                <pc:Coords points="651,1507 772,1507 772,1541 651,1541"/>
+                <pc:Baseline points="651,1543 772,1543"/>
+                <pc:TextEquiv conf="0.747185289859772">
+                    <pc:Unicode>voJ</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_12" primaryLanguage="German">
+                <pc:Coords points="236,1578 1177,1578 1177,1652 236,1652"/>
+                <pc:Baseline points="236,1638 1177,1638"/>
+                <pc:TextEquiv conf="0.974019110202789">
+                    <pc:Unicode>Johann Friederich Luz</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_13" primaryLanguage="German">
+                <pc:Coords points="433,1656 983,1656 983,1703 433,1703"/>
+                <pc:Baseline points="433,1695 983,1695"/>
+                <pc:TextEquiv conf="0.995566308498383">
+                    <pc:Unicode>Ober Caplan zu Gunzenhauſen.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Mit ener Kupfertafel
+voJ
+Johann Friederich Luz
+Ober Caplan zu Gunzenhauſen.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_3_1" type="paragraph">
+            <pc:Coords points="309,2154 1132,2154 1132,2277 309,2277"/>
+            <pc:TextLine id="tl_14" primaryLanguage="German">
+                <pc:Coords points="470,2155 961,2155 961,2210 470,2210"/>
+                <pc:Baseline points="470,2200 961,2200"/>
+                <pc:TextEquiv conf="0.997209191322327">
+                    <pc:Unicode>Frankfurt und Leipzig,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_15" primaryLanguage="German">
+                <pc:Coords points="310,2223 1131,2223 1131,2276 310,2276"/>
+                <pc:Baseline points="310,2266 1131,2266"/>
+                <pc:TextEquiv conf="0.947499454021454">
+                    <pc:Unicode>bey Weigel und Schneider 178 4.</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Frankfurt und Leipzig,
+bey Weigel und Schneider 178 4.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:GraphicRegion id="r_2">
+            <pc:Coords points="482,1722 925,1722 925,2050 482,2050"/>
+        </pc:GraphicRegion>
+        <pc:SeparatorRegion id="r_4">
+            <pc:Coords points="468,1350 941,1350 941,1361 468,1361"/>
+        </pc:SeparatorRegion>
+        <pc:SeparatorRegion id="r_5">
+            <pc:Coords points="259,2095 1189,2088 1186,2109 1034,2116 259,2116"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>

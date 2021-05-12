@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pc:PcGts xmlns:pc="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd" pcGtsId="CALA-GT4HIST_0004">
+    <pc:Metadata>
+        <pc:Creator>OCR-D</pc:Creator>
+        <pc:Created>2016-09-20T09:10:52</pc:Created>
+        <pc:LastChange>2021-05-12T06:53:48</pc:LastChange>
+        <pc:MetadataItem type="processingStep" name="preprocessing/optimization/binarization" value="ocrd-olena-binarize">
+            <pc:Labels>
+                <pc:Label value="sauvola-ms-split" type="impl"/>
+                <pc:Label value="0.34" type="k"/>
+                <pc:Label value="0" type="win-size"/>
+                <pc:Label value="0" type="dpi"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+        <pc:MetadataItem type="processingStep" name="recognition/text-recognition" value="ocrd-calamari-recognize">
+            <pc:Labels externalModel="ocrd-tool" externalId="parameters">
+                <pc:Label value="qurator-gt4histocr-1.0" type="checkpoint_dir"/>
+                <pc:Label value="confidence_voter_default_ctc" type="voter"/>
+                <pc:Label value="line" type="textequiv_level"/>
+                <pc:Label value="0.001" type="glyph_conf_cutoff"/>
+                <pc:Label value="/home/xbert/.local/share/ocrd-resources/ocrd-calamari-recognize/qurator-gt4histocr-1.0/*.ckpt.json" type="checkpoint"/>
+            </pc:Labels>
+        </pc:MetadataItem>
+    </pc:Metadata>
+    <pc:Page imageFilename="OCR-D-IMG/OCR-D-IMG_0004.tif" imageWidth="1728" imageHeight="2646" imageXResolution="300." imageYResolution="300." type="content">
+        <pc:AlternativeImage filename="BIN/OCR-D-IMG_0004-BIN_sauvola-ms-split.png" comments="cropped,binarized"/>
+        <pc:Border>
+            <pc:Coords points="66,309 1230,309 1230,2397 66,2397"/>
+        </pc:Border>
+        <pc:ReadingOrder>
+            <pc:OrderedGroup id="ro357564684568544579089" caption="Regions reading order">
+                <pc:RegionRefIndexed index="0" regionRef="r_2_1"/>
+                <pc:RegionRefIndexed index="1" regionRef="r_3_1"/>
+                <pc:RegionRefIndexed index="2" regionRef="r_3_2"/>
+                <pc:RegionRefIndexed index="3" regionRef="r_3_3"/>
+            </pc:OrderedGroup>
+        </pc:ReadingOrder>
+        <pc:TextRegion id="r_2_1" type="page-number" primaryLanguage="German" secondaryLanguage="Latin">
+            <pc:Coords points="1103,363 1146,363 1146,393 1103,393"/>
+            <pc:TextLine id="tl_1" primaryLanguage="German">
+                <pc:Coords points="1104,364 1145,364 1145,392 1104,392"/>
+                <pc:Baseline points="1104,398 1145,398"/>
+                <pc:TextEquiv conf="0.702577471733093">
+                    <pc:Unicode>I1</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>I1</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_3_1" type="paragraph" primaryLanguage="German" secondaryLanguage="Latin">
+            <pc:Coords points="111,434 1172,434 1172,1830 111,1830"/>
+            <pc:TextLine id="tl_2" primaryLanguage="German">
+                <pc:Coords points="112,435 1151,435 1151,497 112,497"/>
+                <pc:Baseline points="112,485 1151,485"/>
+                <pc:TextEquiv conf="0.986656367778778">
+                    <pc:Unicode>in den Ephemeridibus ſoeietatis Meteorologieae</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_3" primaryLanguage="German">
+                <pc:Coords points="116,492 1154,492 1154,556 116,556"/>
+                <pc:Baseline points="116,541 1154,541"/>
+                <pc:TextEquiv conf="0.966691136360168">
+                    <pc:Unicode>palatinae 178 1. umſtaͤndlich erzaͤhlet werden. Maxi⸗</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_4" primaryLanguage="German">
+                <pc:Coords points="119,545 1153,545 1153,611 119,611"/>
+                <pc:Baseline points="119,597 1153,597"/>
+                <pc:TextEquiv conf="0.982696056365967">
+                    <pc:Unicode>milian Theodor, der Pfaͤlzer und Baiern Churfuͤrſt,</pc:Unicode>
+                </pc:TextEquiv>
+            </pc:TextLine>
+            <pc:TextLine id="tl_5" primaryLanguage="German">
+                <pc:Coords points="120,602 1157,602 1157,664 120,664"/>
+                <pc:Baseline points="120,651 1157,651"/>
+                <pc:TextEquiv conf="0.984553337097168">
+                    <pc:Unicode>ein eben ſo groſer und gruͤndlich gelehrter Naturfor⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_6" primaryLanguage="German">
+                <pc:Coords points="121,661 1157,661 1157,722 121,722"/>
+                <pc:Baseline points="121,707 1157,707"/>
+                <pc:TextEquiv conf="0.998837292194366">
+                    <pc:Unicode>ſcher, als weiſer und guter Regent beſchloß zuerſt unter</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_7" primaryLanguage="German">
+                <pc:Coords points="120,715 1156,715 1156,777 120,777"/>
+                <pc:Baseline points="120,762 1156,762"/>
+                <pc:TextEquiv conf="0.997072696685791">
+                    <pc:Unicode>den Fuͤrſten Deutſchlands die Wetterableiter in ſeinen</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_8" primaryLanguage="German">
+                <pc:Coords points="122,768 1157,768 1157,830 122,830"/>
+                <pc:Baseline points="122,816 1157,816"/>
+                <pc:TextEquiv conf="0.987760841846466">
+                    <pc:Unicode>Landen einzufuͤhren. Auf ſeinem Luſtſchloß Schwet⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_9" primaryLanguage="German">
+                <pc:Coords points="124,824 1160,824 1160,887 124,887"/>
+                <pc:Baseline points="124,872 1160,872"/>
+                <pc:TextEquiv conf="0.999285459518433">
+                    <pc:Unicode>zingen ließ er den erſten Wetterableiter anlegen. Kaum</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_10" primaryLanguage="German">
+                <pc:Coords points="124,879 1160,879 1160,942 124,942"/>
+                <pc:Baseline points="124,927 1160,927"/>
+                <pc:TextEquiv conf="0.993337154388428">
+                    <pc:Unicode>war es geſchehen, ſo wurde er mit Bitten ſeiner Unter⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_11" primaryLanguage="German">
+                <pc:Coords points="126,937 1161,937 1161,1001 126,1001"/>
+                <pc:Baseline points="126,982 1161,982"/>
+                <pc:TextEquiv conf="0.985367894172668">
+                    <pc:Unicode>thanen uͤberhaͤuft, es entweder zu unterlaſſen, oder</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_12" primaryLanguage="German">
+                <pc:Coords points="127,990 1161,990 1161,1054 127,1054"/>
+                <pc:Baseline points="127,1039 1161,1039"/>
+                <pc:TextEquiv conf="0.992010712623596">
+                    <pc:Unicode>wenigſtens ſich nicht an einem ſo gefaͤhrlichen Ort auf⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_13" primaryLanguage="German">
+                <pc:Coords points="128,1048 1162,1048 1162,1110 128,1110"/>
+                <pc:Baseline points="128,1095 1162,1095"/>
+                <pc:TextEquiv conf="0.995549857616425">
+                    <pc:Unicode>zuhalten. Allein er mußte, um die Vorurtheile zu</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_14" primaryLanguage="German">
+                <pc:Coords points="126,1104 1162,1104 1162,1162 126,1162"/>
+                <pc:Baseline points="126,1149 1162,1149"/>
+                <pc:TextEquiv conf="0.999125778675079">
+                    <pc:Unicode>widerlegen, dieſe Bitte ſeiner Unterthanen verſagen.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_15" primaryLanguage="German">
+                <pc:Coords points="128,1158 1162,1158 1162,1214 128,1214"/>
+                <pc:Baseline points="128,1203 1162,1203"/>
+                <pc:TextEquiv conf="0.999021768569946">
+                    <pc:Unicode>Er wohnte dem naͤchſten Sommer auf ſeinem mit</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_16" primaryLanguage="German">
+                <pc:Coords points="128,1213 1162,1213 1162,1272 128,1272"/>
+                <pc:Baseline points="128,1258 1162,1258"/>
+                <pc:TextEquiv conf="0.985403001308441">
+                    <pc:Unicode>Wetterableitern verſehenen Luſtſchloß ruhig, waͤh rend</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_17" primaryLanguage="German">
+                <pc:Coords points="127,1267 1166,1267 1166,1323 127,1323"/>
+                <pc:Baseline points="127,1312 1166,1312"/>
+                <pc:TextEquiv conf="0.980807542800903">
+                    <pc:Unicode>dem ſein Volk bey jedem Wetter aͤngſtlich um ſein Le⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_18" primaryLanguage="German">
+                <pc:Coords points="131,1316 1166,1316 1166,1377 131,1377"/>
+                <pc:Baseline points="131,1366 1166,1366"/>
+                <pc:TextEquiv conf="0.996555924415588">
+                    <pc:Unicode>ben beſorgt war. Das folgende Jahr ließ er auch an</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_19" primaryLanguage="German">
+                <pc:Coords points="131,1377 1170,1377 1170,1432 131,1432"/>
+                <pc:Baseline points="131,1421 1170,1421"/>
+                <pc:TextEquiv conf="0.996387422084808">
+                    <pc:Unicode>ſeinem Schloß zu Mannheim einen Wetterableiter an⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_20" primaryLanguage="German">
+                <pc:Coords points="132,1430 1168,1430 1168,1492 132,1492"/>
+                <pc:Baseline points="132,1477 1168,1477"/>
+                <pc:TextEquiv conf="0.996835649013519">
+                    <pc:Unicode>richten; zwar nicht ganz ohne Beaͤngſtigung, aber</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_21" primaryLanguage="German">
+                <pc:Coords points="131,1489 1169,1489 1169,1551 131,1551"/>
+                <pc:Baseline points="131,1535 1169,1535"/>
+                <pc:TextEquiv conf="0.998384833335876">
+                    <pc:Unicode>ſchon mit mehrerer Beruhigung der Einwohner; da ſie</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_22" primaryLanguage="German">
+                <pc:Coords points="133,1544 1169,1544 1169,1608 133,1608"/>
+                <pc:Baseline points="133,1593 1169,1593"/>
+                <pc:TextEquiv conf="0.990305960178375">
+                    <pc:Unicode>wuſten, daß ihr Churfuͤrſt bereits einen Sommer un⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_23" primaryLanguage="German">
+                <pc:Coords points="134,1603 1168,1603 1168,1661 134,1661"/>
+                <pc:Baseline points="134,1649 1168,1649"/>
+                <pc:TextEquiv conf="0.99947714805603">
+                    <pc:Unicode>ter einem Wetterableiter ſicher zugebracht hatte. Jm</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_24" primaryLanguage="German">
+                <pc:Coords points="133,1661 1169,1661 1169,1719 133,1719"/>
+                <pc:Baseline points="133,1706 1169,1706"/>
+                <pc:TextEquiv conf="0.996092915534973">
+                    <pc:Unicode>dritten Jahr fiengen ſchon viele Privatperſonen an,</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_25" primaryLanguage="German">
+                <pc:Coords points="134,1717 1171,1717 1171,1773 134,1773"/>
+                <pc:Baseline points="134,1762 1171,1762"/>
+                <pc:TextEquiv conf="0.999473512172699">
+                    <pc:Unicode>die Wetterſtangen aufrichten zu laſſen, und bald wur</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_26" primaryLanguage="German">
+                <pc:Coords points="134,1778 452,1778 452,1829 134,1829"/>
+                <pc:Baseline points="134,1817 452,1817"/>
+                <pc:TextEquiv conf="0.998850524425507">
+                    <pc:Unicode>den ſie allgemein.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>in den Ephemeridibus ſoeietatis Meteorologieae
+palatinae 178 1. umſtaͤndlich erzaͤhlet werden. Maxi⸗
+milian Theodor, der Pfaͤlzer und Baiern Churfuͤrſt,
+ein eben ſo groſer und gruͤndlich gelehrter Naturfor⸗
+ſcher, als weiſer und guter Regent beſchloß zuerſt unter
+den Fuͤrſten Deutſchlands die Wetterableiter in ſeinen
+Landen einzufuͤhren. Auf ſeinem Luſtſchloß Schwet⸗
+zingen ließ er den erſten Wetterableiter anlegen. Kaum
+war es geſchehen, ſo wurde er mit Bitten ſeiner Unter⸗
+thanen uͤberhaͤuft, es entweder zu unterlaſſen, oder
+wenigſtens ſich nicht an einem ſo gefaͤhrlichen Ort auf⸗
+zuhalten. Allein er mußte, um die Vorurtheile zu
+widerlegen, dieſe Bitte ſeiner Unterthanen verſagen.
+Er wohnte dem naͤchſten Sommer auf ſeinem mit
+Wetterableitern verſehenen Luſtſchloß ruhig, waͤh rend
+dem ſein Volk bey jedem Wetter aͤngſtlich um ſein Le⸗
+ben beſorgt war. Das folgende Jahr ließ er auch an
+ſeinem Schloß zu Mannheim einen Wetterableiter an⸗
+richten; zwar nicht ganz ohne Beaͤngſtigung, aber
+ſchon mit mehrerer Beruhigung der Einwohner; da ſie
+wuſten, daß ihr Churfuͤrſt bereits einen Sommer un⸗
+ter einem Wetterableiter ſicher zugebracht hatte. Jm
+dritten Jahr fiengen ſchon viele Privatperſonen an,
+die Wetterſtangen aufrichten zu laſſen, und bald wur
+den ſie allgemein.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_3_2" type="paragraph" primaryLanguage="German" secondaryLanguage="Latin">
+            <pc:Coords points="132,1820 1176,1820 1176,2321 132,2321"/>
+            <pc:TextLine id="tl_27" primaryLanguage="German">
+                <pc:Coords points="221,1821 1172,1821 1172,1883 221,1883"/>
+                <pc:Baseline points="221,1870 1172,1870"/>
+                <pc:TextEquiv conf="0.984502375125885">
+                    <pc:Unicode>Nun fiel dieſem groſem Reichsfuͤrſten auch Chur⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_28" primaryLanguage="German">
+                <pc:Coords points="137,1879 1172,1879 1172,1935 137,1935"/>
+                <pc:Baseline points="137,1925 1172,1925"/>
+                <pc:TextEquiv conf="0.998830318450928">
+                    <pc:Unicode>Baiern durch Erbſchaft zu. Daher dachte er gleich</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_29" primaryLanguage="German">
+                <pc:Coords points="137,1931 1173,1931 1173,1988 137,1988"/>
+                <pc:Baseline points="137,1978 1173,1978"/>
+                <pc:TextEquiv conf="0.989880859851837">
+                    <pc:Unicode>darauf, auch ſein Muͤncher Schloß und das Sommer⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_30" primaryLanguage="German">
+                <pc:Coords points="138,1989 1173,1989 1173,2047 138,2047"/>
+                <pc:Baseline points="138,2034 1173,2034"/>
+                <pc:TextEquiv conf="0.998979985713959">
+                    <pc:Unicode>Schloß zu Nymphenburg, durch Wetterableiter vor dem</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_31" primaryLanguage="German">
+                <pc:Coords points="137,2044 1173,2044 1173,2104 137,2104"/>
+                <pc:Baseline points="137,2089 1173,2089"/>
+                <pc:TextEquiv conf="0.995092809200287">
+                    <pc:Unicode>Blitz zu verwahren. Aber hier geſchahe, was man kaum</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_32" primaryLanguage="German">
+                <pc:Coords points="137,2099 1173,2099 1173,2154 137,2154"/>
+                <pc:Baseline points="137,2145 1173,2145"/>
+                <pc:TextEquiv conf="0.991343915462494">
+                    <pc:Unicode>denken ſollte. Der Poͤbel wurde von der Geiſtlichkeit an⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_33" primaryLanguage="German">
+                <pc:Coords points="137,2155 1172,2155 1172,2213 137,2213"/>
+                <pc:Baseline points="137,2201 1172,2201"/>
+                <pc:TextEquiv conf="0.996331691741943">
+                    <pc:Unicode>geſtiftet, ſich dieſem Unternehmen zu widerſetzen. Es</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_34" primaryLanguage="German">
+                <pc:Coords points="137,2211 1175,2211 1175,2267 137,2267"/>
+                <pc:Baseline points="137,2255 1175,2255"/>
+                <pc:TextEquiv conf="0.993890762329102">
+                    <pc:Unicode>entſtund alſo ein Tumult, und die Wetterableiter mu⸗</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextLine id="tl_35" primaryLanguage="German">
+                <pc:Coords points="133,2260 1173,2260 1173,2320 133,2320"/>
+                <pc:Baseline points="133,2309 1173,2309"/>
+                <pc:TextEquiv conf="0.985120475292206">
+                    <pc:Unicode>ſten unter dem Schutß der Waffen aufgerichtet werden.</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Nun fiel dieſem groſem Reichsfuͤrſten auch Chur⸗
+Baiern durch Erbſchaft zu. Daher dachte er gleich
+darauf, auch ſein Muͤncher Schloß und das Sommer⸗
+Schloß zu Nymphenburg, durch Wetterableiter vor dem
+Blitz zu verwahren. Aber hier geſchahe, was man kaum
+denken ſollte. Der Poͤbel wurde von der Geiſtlichkeit an⸗
+geſtiftet, ſich dieſem Unternehmen zu widerſetzen. Es
+entſtund alſo ein Tumult, und die Wetterableiter mu⸗
+ſten unter dem Schutß der Waffen aufgerichtet werden.</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:TextRegion id="r_3_3" type="catch-word" primaryLanguage="German" secondaryLanguage="Latin">
+            <pc:Coords points="1045,2315 1166,2315 1166,2363 1045,2363"/>
+            <pc:TextLine id="tl_36" primaryLanguage="German">
+                <pc:Coords points="1046,2316 1165,2316 1165,2362 1046,2362"/>
+                <pc:Baseline points="1046,2367 1165,2367"/>
+                <pc:TextEquiv conf="0.998071253299713">
+                    <pc:Unicode>Kaum</pc:Unicode>
+                </pc:TextEquiv>
+                <pc:TextStyle/>
+            </pc:TextLine>
+            <pc:TextEquiv>
+                <pc:Unicode>Kaum</pc:Unicode>
+            </pc:TextEquiv>
+        </pc:TextRegion>
+        <pc:SeparatorRegion id="Separator_1474987721719_170">
+            <pc:Coords points="499,350 789,350 789,402 499,402"/>
+        </pc:SeparatorRegion>
+    </pc:Page>
+</pc:PcGts>
