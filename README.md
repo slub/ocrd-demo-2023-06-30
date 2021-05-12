@@ -21,7 +21,11 @@
     docker pull ocrd/all:maximum
     # or:
     docker pull ocrd/all:maximum-cuda
-    docker run --rm -it -V $PWD:/data -V $HOME/.local/share/ocrd-resources:/usr/local/share/ocrd-resources ocrd/all bash
+    mkdir -p models data
+    docker run --rm -it -V $PWD/data:/data -V $PWD/models:/usr/local/share/ocrd-resources \
+        ocrd/all bash
+
+(Or, to share models between native and Docker, mount `$HOME/.local/share/ocrd-resources`.)
 
 ### Download models
 
