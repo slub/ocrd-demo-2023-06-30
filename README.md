@@ -167,7 +167,7 @@ ocrd-cor-asv-ann-evaluate -m data/mets.xml -I OCR-D-GT-SEG-LINE,TESS-GT4HIST,TES
 
 The results are JSON files in the `EVAL-ASV` filegroup with line-by-line distance measures between all the engine.
 
-[`data/EVAL-ASV/EVAL-ASV.json`](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/data/EVAL-ASV/EVAL-ASV.json) contains the metrics (CER mean and variance) and top confusion table for the full workspace:
+[`data/EVAL-ASV/EVAL-ASV.json`](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/demo3/data/EVAL-ASV/EVAL-ASV.json) contains the metrics (CER mean and variance) and top confusion table for the full workspace:
 
 ```json
 {
@@ -192,7 +192,7 @@ The results are JSON files in the `EVAL-ASV` filegroup with line-by-line distanc
 }
 ```
 
-[`data/EVAL-ASV/EVAL-ASV_0003.json`](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/data/EVAL-ASV/EVAL-ASV_0003.json) contains the metrics for each line of page 3.
+[`data/EVAL-ASV/EVAL-ASV_0003.json`](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/demo3/data/EVAL-ASV/EVAL-ASV_0003.json) contains the metrics for each line of page 3.
 
 ### Compare Calamari output with GT using `ocrd-dinglehopper`
 
@@ -202,11 +202,11 @@ ocrd-dinglehopper -m data/mets.xml -P textequiv_level line -I OCR-D-GT-SEG-LINE,
 
 The result are HTML files (Diff View) and JSON files (with CER and WER).
 
-[HTML](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/data/EVAL-DINGLE/EVAL-DINGLE_0003.html) for page 3:
+[HTML](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/demo3/data/EVAL-DINGLE/EVAL-DINGLE_0003.html) for page 3:
 
-[![](https://github.com/bertsky/ocrd-demo-2021-05-12/raw/master/dinglehopper-0003.png)](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/data/EVAL-DINGLE/EVAL-DINGLE_0003.json)
+[![](https://github.com/bertsky/ocrd-demo-2021-05-12/raw/master/dinglehopper-0003.png)](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/demo3/data/EVAL-DINGLE/EVAL-DINGLE_0003.json)
 
-[JSON](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/data/EVAL-DINGLE/EVAL-DINGLE_0003.json) for page 3:
+[JSON](https://github.com/bertsky/ocrd-demo-2021-05-12/tree/master/demo3/data/EVAL-DINGLE/EVAL-DINGLE_0003.json) for page 3:
 
 ```json
 {
@@ -230,4 +230,24 @@ The result are HTML files (Diff View) and JSON files (with CER and WER).
     browse-ocrd data/mets.xml
 
 ## Demo 4 - makefiles
+
+> Recreate demo1 and demo2 via equivalent makefiles
+
+### Try to build
+
+    make -f demo1.mk demo1
+    make -f demo2.mk demo2
+
+> make[1]: Entering directory 'demo1'
+> make[1]: 'OCR-D-OCR-TESS' is up to date.
+> make[1]: Leaving directory 'demo1'
+> make[1]: Entering directory 'demo2'
+> make[1]: 'OCR-D-OCR is up to date.
+> make[1]: Leaving directory 'demo2'
+
+### Trigger rebuild
+
+    touch demo1/OCR-D-IMG demo2/DEFAULT
+    make -f demo1.mk demo1
+    make -f demo2.mk demo2
 
