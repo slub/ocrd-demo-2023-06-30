@@ -1,1 +1,0 @@
-/home/xbert/unsortiert/arbeit/heyer/tools/ocrd_tesserocr/venv/share/workflow-configuration/Makefile

@@ -21,8 +21,8 @@ info:
 
 FULLTEXT:
 	ocrd workspace find -G ORIGINAL --download
-        ocrd workspace find -G FULLTEXT --download
-        xmlstarlet ed --inplace -d //_:Shape FULLTEXT/*
+	ocrd workspace find -G FULLTEXT --download
+	xmlstarlet ed --inplace -d //_:Shape FULLTEXT/*
 
 # created by side effect above
 ORIGINAL: ;
