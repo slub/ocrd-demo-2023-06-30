@@ -13,109 +13,136 @@
     git clone https://github.com/OCR-D/ocrd_all
     cd ocrd_all
     sudo make deps-ubuntu
+    # optionally:
+    sudo make deps-cuda
     make all
     . venv/bin/activate
+    mkdir -p ~/data
+    cd ~/data
 
 ### Install (Docker)
 
     docker pull ocrd/all:maximum
     # or:
     docker pull ocrd/all:maximum-cuda
-    mkdir -p models data
-    docker run --rm -it -V $PWD/data:/data -V $PWD/models:/usr/local/share/ocrd-resources \
-        ocrd/all bash
-
-(Or, to share models between native and Docker, mount `$HOME/.local/share/ocrd-resources`.)
+    mkdir -p ~/data
+    docker run -it -v ~/data:/data -v ocrd-models:/models ocrd/all bash
 
 ### Download models
 
     ocrd resmgr list-available
+    ocrd resmgr download ocrd-sbb-binarize default-2021-03-09
     ocrd resmgr download ocrd-tesserocr-recognize deu.traineddata
-    ocrd resmgr download ocrd-tesserocr-recognize Fraktur_GT4HistOCR.traineddata
-    ocrd resmgr download ocrd-calamari-recognize qurator-gt4histocr-1.0
+    ocrd resmgr download ocrd-tesserocr-recognize frk.traineddata
+    ocrd resmgr download ocrd-tesserocr-recognize GT4HistOCR.traineddata
+    ocrd resmgr download ocrd-tesserocr-recognize Fraktur.traineddata
+    ocrd resmgr download ocrd-tesserocr-recognize Latin.traineddata
+    ocrd resmgr download ocrd-kraken-recognize austriannewspapers.mlmodel
 
 ## Demo 1 - create workspace, run Tesseract
 
-> Start with a bunch of images, create workspace, run tesseract
+> Start with a bunch of images, create workspace, run Tesseract all-in-one
 
-### Browse IA
+### Browse [Börsenblatt](https://boersenblatt-digital.de)
 
-→ https://archive.org/details/2917685.0001.001.umich.edu/page/2/mode/2up
+→ http://digital.slub-dresden.de/id39946221X-18560530
 
-### Copy link for "SINGLE PAGE PROCESSED TIFF ZIP"
+### Copy links for "Einzelseite als Bild herunterladen"
 
 ### Download
 
-```sh
-wget 'https://archive.org/download/2917685.0001.001.umich.edu/2917685.0001.001.umich.edu_tif.zip'
-```
+    wget https://digital.slub-dresden.de/data/kitodo/Brsfded_39946221X-18560530/Brsfded_39946221X-18560530_tif/jpegs/000000{01..16}.tif.original.jpg
 
-### Unzip and chdir
+### Mkdir and chdir
 
-    unzip 2917685.0001.001.umich.edu_tif.zip
+    mkdir -p demo1
+    mv *.jpg demo1
+    cd demo1
 
 ### Import images into new workspace
 
-    ocrd-import -i -P . 
+    ocrd-import -P . 
 
 ### Minimalist workflow
 
-    ocrd process "tesserocr-recognize -I OCR-D-IMG -O OCR-D-OCR-TESS -P segmentation_level region -P textequiv_level word -P find_tables true -P model deu"
+    ocrd process "tesserocr-recognize -I OCR-D-IMG -O OCR-D-OCR-TESS -P segmentation_level region -P textequiv_level word -P find_tables true -P model frak2021"
     # or equivalently:
-    ocrd-tesserocr-recognize -I OCR-D-IMG -O OCR-D-OCR-TESS -P segmentation_level region -P textequiv_level word -P find_tables true -P model deu
+    ocrd-tesserocr-recognize -I OCR-D-IMG -O OCR-D-OCR-TESS -P segmentation_level region -P textequiv_level word -P find_tables true -P model frak2021
 
-The results are in the `OCR-D-OCR-TESS` file group / folder.
+The results are in the `OCR-D-OCR-TESS` file group / directory.
 
 ### Inspect results with browse-ocrd and JPageViewer
 
-> Visualize results with [browse-ocrd](https://github.com/hnesk/browse-ocrd/) and [PRImA PageViewer](https://github.com/PRImA-Research-Lab/prima-page-viewer)
+> Visualize results with [browse-ocrd](https://github.com/hnesk/browse-ocrd/) or [PRImA PageViewer](https://github.com/PRImA-Research-Lab/prima-page-viewer)
 
 
 ## Demo 2 - clone workspace, more complex workflow
 
-> Start with a METS from SBB, run a more complex workflow on it
+> Start with a METS from SLUB, run a more complex workflow on it
 
-### Browse to https://digital.staatsbibliothek-berlin.de/werkansicht?PPN=PPN680203753
+### Browse back
 
-### Select the METS XML from the "Vollständige Bibliografische Informationen"
+### Select the link below "OAI-Identifier" to retrieve the METS XML
 
-→ https://content.staatsbibliothek-berlin.de/dc/PPN680203753.mets.xml
+→ https://digital.slub-dresden.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=oai:de:slub-dresden:db:id-39946221X-18560530
 
-### Clone the workspace
+### Clone as workspace
 
-```sh
-ocrd workspace clone https://content.staatsbibliothek-berlin.de/dc/PPN680203753.mets.xml
-```
+    ocrd workspace -d demo2 clone "https://digital.slub-dresden.de/oai/?verb=GetRecord&metadataPrefix=mets&identifier=oai:de:slub-dresden:db:id-39946221X-18560530"
 
 ### Inspect available file groups
 
-```sh
-ocrd workspace find -k fileGrp -k url -k mimetype
-```
+    ocrd workspace find -k fileGrp -k url -k mimetype
 
-### Download all images in DEFAULT file group
+### Download all images in ORIGINAL file group
 
-```sh
-ocrd workspace find --file-grp DEFAULT --download
-```
+    ocrd workspace find --file-grp ORIGINAL --download
 
-### Run the second workflow example from the Workflow Guide
+### Run the same simple workflow as above
 
-Since our file group is called `DEFAULT`, `OCR-D-IMG` must be replaced with `DEFAULT` here.
+Since our file group is called `ORIGINAL`, `OCR-D-IMG` must be replaced with `ORIGINAL` here.
 
-```sh
-ocrd process \
-  "cis-ocropy-binarize -I DEFAULT -O OCR-D-BIN" \
-  "anybaseocr-crop -I OCR-D-BIN -O OCR-D-CROP" \
-  "skimage-binarize -I OCR-D-CROP -O OCR-D-BIN2 -P method li" \
-  "skimage-denoise -I OCR-D-BIN2 -O OCR-D-BIN-DENOISE -P level-of-operation page" \
-  "tesserocr-deskew -I OCR-D-BIN-DENOISE -O OCR-D-BIN-DENOISE-DESKEW -P operation_level page" \
-  "cis-ocropy-segment -I OCR-D-BIN-DENOISE-DESKEW -O OCR-D-SEG -P level-of-operation page" \
-  "cis-ocropy-dewarp -I OCR-D-SEG -O OCR-D-SEG-LINE-RESEG-DEWARP" \
-  "calamari-recognize -I OCR-D-SEG-LINE-RESEG-DEWARP -O OCR-D-OCR -P checkpoint_dir qurator-gt4histocr-1.0"
-```
+    ocrd-tesserocr-recognize -I ORIGINAL -O TESSERACT -P segmentation_level region -P textequiv_level word -P find_tables true -P model frak2021
 
-The results are in the `OCR-D-OCR` file group / folder.
+The results are in the `TESSERACT` file group / directory.
+
+### Run a (somewhat) suitable workflow
+
+1. Download the existing annotations from ABBYY Cloud and repair them (removing `Shape` elements with wrong coordinates)
+
+        ocrd workspace find -G FULLTEXT --download
+        xmlstarlet ed --inplace -d //_:Shape FULLTEXT/*
+        # ocrd workspace prune-files # delete all other files (not downloaded)
+
+2. Convert ALTO to PAGE (adding correct image reference)
+
+        ocrd-fileformat-transform -I FULLTEXT -O PAGE -P from-to "alto page"
+        ocrd-segment-replace-page -I ORIGINAL,PAGE -O PAGE2 -P transform_coordinates false
+
+3. Binarize and crop
+
+        ocrd-sbb-binarize -I PAGE2 -O BINARIZED -P model default-2021-03-09
+        ocrd-anybaseocr-crop -I BINARIZED -O CROPPED -P marginBottom 0.9 -P marginTop 0.1 -P marginRight 0.9 -P marginLeft 0.1
+
+4. Overwrite line segmentation, repair region segmentation
+
+        ocrd-cis-ocropy-segment -I CROPPED -O LINES -P level-of-operation region
+        ocrd-segment-repair -I LINES -O REPAIR -P plausibilize true
+
+5. Dewarp on line level
+
+        ocrd-cis-ocropy-dewarp -I REPAIR -O DEWARPED
+
+6. Run multiple OCR models and combine them
+
+        ocrd-calamari-recognize -I DEWARPED -O OCR1 -P checkpoint_dir qurator-gt4histocr-1.0 -P textequiv_level glyph
+        ocrd-tesserocr-recognize -I DEARPED -O OCR2 -P model frak2021 -P textequiv_level glyph
+        ocrd-tesserocr-recognize -I DEARPED -O OCR3 -P model GT4HistOCR+Fraktur+frk+Latin+deu -P textequiv_level glyph
+        ocrd-kraken-recognize -I DEARPED -O OCR4 -P model austriannewspapers.mlmodel
+        ocrd-cor-asv-ann-align -I OCR1,OCR2,OCR3,OCR4 -O ALIGNED -P method combined
+        ocrd-page-transform -I ALIGNED -O OCRX -P xsl page-remove-words.xsl
+
+The results are in the `OCRX` file group / directory.
 
 ## Demo 3 - run various OCR engines on GT and evaluate
 
@@ -151,7 +178,7 @@ Tesseract (using `Fraktur_GT4HistOCR` and `deu`) and one run with calamari (usin
 ```sh
 ocrd process -m data/mets.xml \
   "olena-binarize -I OCR-D-GT-SEG-LINE -O BIN" \
-  "tesserocr-recognize -P segmentation_level word -P textequiv_level line -P find_tables true -P model Fraktur_GT4HistOCR -I BIN -O TESS-GT4HIST" \
+  "tesserocr-recognize -P segmentation_level word -P textequiv_level line -P find_tables true -P model frak2021 -I BIN -O TESS-GT4HIST" \
   "tesserocr-recognize -P segmentation_level word -P textequiv_level line -P find_tables true -P model deu -I BIN -O TESS-DEU" \
   "calamari-recognize -P checkpoint_dir qurator-gt4histocr-1.0 -I BIN -O CALA-GT4HIST"
 ```
@@ -235,19 +262,19 @@ The result are HTML files (Diff View) and JSON files (with CER and WER).
 
 ### Try to build
 
-    make -f demo1.mk demo1
-    make -f demo2.mk demo2
+    ocrd-make -f demo1.mk demo1
+    ocrd-make -f demo2.mk demo2
 
 > make[1]: Entering directory 'demo1'
 > make[1]: 'OCR-D-OCR-TESS' is up to date.
 > make[1]: Leaving directory 'demo1'
 > make[1]: Entering directory 'demo2'
-> make[1]: 'OCR-D-OCR is up to date.
+> make[1]: OCRX is up to date.
 > make[1]: Leaving directory 'demo2'
 
 ### Trigger rebuild
 
-    touch demo1/OCR-D-IMG demo2/DEFAULT
-    make -f demo1.mk demo1
-    make -f demo2.mk demo2
+    touch demo1/OCR-D-IMG demo2/ORIGINAL
+    ocrd-make -f demo1.mk demo1
+    ocrd-make -f demo2.mk demo2
 

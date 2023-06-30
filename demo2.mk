@@ -19,41 +19,59 @@ info:
 	@echo "then segment pages into text regions and lines with Tesseract,"
 	@echo "and (in the same step) recognize lines with model deu."
 
-DEFAULT:
-	ocrd workspace find --file-grp DEFAULT --download
+FULLTEXT:
+	ocrd workspace find -G ORIGINAL --download
+        ocrd workspace find -G FULLTEXT --download
+        xmlstarlet ed --inplace -d //_:Shape FULLTEXT/*
 
-OCR-D-BIN: DEFAULT
-OCR-D-BIN: TOOL = ocrd-cis-ocropy-binarize
+# created by side effect above
+ORIGINAL: ;
 
-OCR-D-CROP: OCR-D-BIN
-OCR-D-CROP: TOOL = ocrd-anybaseocr-crop
+PAGE: FULLTEXT
+PAGE: TOOL = ocrd-fileformat-transform
+PAGE: OPTIONS = -P from-to "alto page"
 
-OCR-D-BIN2: OCR-D-CROP
-OCR-D-BIN2: TOOL = ocrd-skimage-binarize
-OCR-D-BIN2: PARAMS = "method": "li"
+PAGE2: ORIGINAL PAGE
+PAGE2: TOOL = ocrd-segment-replace-page
+PAGE2: OPTIONS = -P transform_coordinates false
 
-DEN = OCR-D-BIN-DENOISE
-$(DEN): OCR-D-BIN2
-$(DEN): TOOL = ocrd-skimage-denoise
-$(DEN): PARAMS = "level-of-operation": "page"
+BINARIZED: PAGE2
+BINARIZED: TOOL = ocrd-sbb-binarize
+BINARIZED: OPTIONS = -P model default-2021-03-09
 
-DESK = $(DEN)-DESKEW
-$(DESK): OCR-D-BIN-DENOISE
-$(DESK): TOOL = ocrd-tesserocr-deskew
-$(DESK): PARAMS = "operation_level": "page"
+CROPPED: BINARIZED
+CROPPED: TOOL = ocrd-anybaseocr-crop
+CROPPED: OPTIONS = -P marginBottom 0.9 -P marginTop 0.1 -P marginRight 0.9 -P marginLeft 0.1
 
-OCR-D-SEG: $(DESK)
-OCR-D-SEG: TOOL = ocrd-cis-ocropy-segment
-OCR-D-SEG: PARAMS = "level-of-operation": "page"
+LINES: CROPPED
+LINES: TOOL = ocrd-cis-ocropy-segment
+LINES: OPTIONS = -P level-of-operation region
 
-OCR-D-SEG-LINE-RESEG-DEWARP: OCR-D-SEG
-OCR-D-SEG-LINE-RESEG-DEWARP: TOOL = ocrd-cis-ocropy-dewarp
+REPAIR: LINES
+REPAIR: TOOL = ocrd-segment-repair
+REPAIR: OPTIONS = -P plausibilize true
 
-OCR-D-OCR: OCR-D-SEG-LINE-RESEG-DEWARP
-OCR-D-OCR: TOOL = ocrd-calamari-recognize
-OCR-D-OCR: PARAMS = "checkpoint_dir": "qurator-gt4histocr-1.0"
+DEWARPED: REPAIR
+DEWARPED: TOOL = ocrd-cis-ocropy-dewarp
 
-.DEFAULT_GOAL = OCR-D-OCR
+OCR1 OCR2 OCR3 OCR4: DEWARPED
+OCR1: TOOL = ocrd-calamari-recognize
+OCR1: OPTIONS = -P checkpoint_dir qurator-gt4histocr-1.0 -P textequiv_level glyph
+OCR2 OCR3: TOOL = ocrd-tesserocr-recognize
+OCR2: OPTIONS = -P model frak2021
+OCR3: OPTIONS = -P model GT4HistOCR+Fraktur+frk+Latin+deu -P textequiv_level glyph
+OCR4: TOOL = ocrd-kraken-recognize
+OCR4: OPTIONS = -P model austriannewspapers.mlmodel
+
+ALIGNED: OCR1 OCR2 OCR3 OCR4
+ALIGNED: TOOL = ocrd-cor-asv-ann-align
+ALIGNED: OPTIONS = -P method combined
+
+OCRX: ALIGNED
+OCRX: TOOL = ocrd-page-transform
+OCRX: OPTIONS = -P xsl page-remove-words.xsl
+
+.DEFAULT_GOAL = OCRX
 
 # Down here, custom configuration ends.
 ###

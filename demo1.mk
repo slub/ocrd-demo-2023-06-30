@@ -22,7 +22,7 @@ info:
 OCR-D-OCR-TESS: OCR-D-IMG
 OCR-D-OCR-TESS: TOOL = ocrd-tesserocr-recognize
 OCR-D-OCR-TESS: PARAMS = "segmentation_level": "region", "textequiv_level": "word",\
-			 "find_tables": true, "model": "deu"
+			 "find_tables": true, "model": "frak2021"
 
 .DEFAULT_GOAL = OCR-D-OCR-TESS
 
