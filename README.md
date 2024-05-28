@@ -78,6 +78,8 @@ The results are in the `OCR-D-OCR-TESS` file group / directory.
 
 ## Demo 2 - clone workspace, more complex workflow
 
+→ [Document from SLUB Digital Collection](http://digital.slub-dresden.de/id39946221X-18560530)
+
 > Start with a METS from SLUB, run a more complex workflow on it
 
 ### Browse back
