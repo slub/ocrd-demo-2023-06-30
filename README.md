@@ -154,11 +154,11 @@ be seen as recommendation.
 
 ### Browse to and download from OCR-D GT Repo
 
-* Go to https://ocr-d.de/gt-repo
-* Copy link to https://ocr-d-repo.scc.kit.edu/api/v1/dataresources/dda89351-7596-46eb-9736-593a5e9593d3/data/luz_blitz_1784.ocrd.zip
+* Go to https://github.com/OCR-D/gt_structure_text
+* Copy link to https://github.com/OCR-D/gt_structure_text/releases/download/v1.4.8/luz_blitz_1784.ocrd.zip
 
 ```sh
-wget https://ocr-d-repo.scc.kit.edu/api/v1/dataresources/dda89351-7596-46eb-9736-593a5e9593d3/data/luz_blitz_1784.ocrd.zip
+wget https://github.com/OCR-D/gt_structure_text/releases/download/v1.4.8/luz_blitz_1784.ocrd.zip
 ```
 
 ### Extract the OCRD-ZIP
